@@ -32,4 +32,51 @@ body {
 }
 
 
+/* card */
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.card-img {
+    height: 100%;
+    width: 320px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+}
+
+.location-logo {
+    height: 20px;
+}
+
+.card-country {
+    font-size: 20px;
+    
+}
+
+
+.card-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.card-date {
+    font-weight: bold;
+    margin-bottom: 8px ;
+}
+
 
