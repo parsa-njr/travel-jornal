@@ -1,23 +1,25 @@
 import React from "react";
-import japan from "./images/japan.jpg"
+
 import locationLogo from "./images/icons8-location-48.png"
 
-export default function Cards() {
+export default function Cards(props) {
     return (
         <section className="container">
             <div className="card">
-                <img className="card-img" src={japan}  alt="" />
+                <img className="card-img" src={props.img}  alt="" />
 
                 <div className="card-discription">
                     <span className="card-location">
                         <img className="location-logo" src={locationLogo} alt=""/>
-                        <p className="card-country">JAPAN</p>
+                        <p className="card-country">{props.country}</p>
                     </span>
-                    <h3 className="card-name">Mount Fuji</h3>
-                    <p className="card-date">12 Jan, 2021 - 24 Jan, 2021</p>
-                    <p className="card-p">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                    <h3 className="card-name">{props.name}</h3>
+                    <p className="card-date">{props.date}</p>
+                    <p className="card-p">{props.note}</p>
                 </div>
             </div>
+            
+           
         </section>
     )
 }
